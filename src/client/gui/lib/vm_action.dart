@@ -84,10 +84,10 @@ class VmActionButton extends StatelessWidget {
     return OutlinedButton(
       onPressed: onPressed,
       style: ButtonStyle(
-        side: MaterialStateBorderSide.resolveWith(
+        side: WidgetStateBorderSide.resolveWith(
           (states) => BorderSide(
             color: const Color(0xff333333).withOpacity(
-              states.contains(MaterialState.disabled) ? 0.5 : 1,
+              states.contains(WidgetState.disabled) ? 0.5 : 1,
             ),
           ),
         ),
